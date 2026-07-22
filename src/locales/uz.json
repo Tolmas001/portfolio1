@@ -1,0 +1,64 @@
+{
+  "navbar": {
+    "about": "Men Haqimda",
+    "projects": "Loyihalar",
+    "contact": "Bog'lanish"
+  },
+  "hero": {
+    "greeting": "Assalomu alaykum, men",
+    "role": "Frontend Dasturchi",
+    "description": "Men zamonaviy, tez ishlashga qodir va chiroyli dizaynga ega interfeyslar yaratishga qiziqaman. React va TypeScript ekotizimida muammolarni hal qilish men uchun katta zavq bag'ishlaydi.",
+    "view_projects": "Loyihalarni ko'rish",
+    "download_cv": "Rezyumeni yuklab olish",
+    "image_placeholder": "Rasm joyi"
+  },
+  "about": {
+    "title": "Men Haqimda",
+    "p1": "Salom! Men Tolmas. Veb-texnologiyalarga bo'lgan qiziqishim meni dasturlash olamiga olib kirdi. O'z ustimda tinimsiz ishlash va yangi narsalarni o'rganish orqali foydalanuvchilarga qulay, tez ishlaydigan va chiroyli veb ilovalar yaratishni maqsad qilganman.",
+    "p2": "Men nafaqat kod yozishni, balki har bir detal ustida ishlashni va mahsulotning sifatini eng yuqori darajaga olib chiqishni yaxshi ko'raman. Sizning jamoangizda yoki loyihangizda ishtirok etishdan mamnun bo'laman.",
+    "skills": {
+      "frontend_desc": "React, Vue, TypeScript, Tailwind",
+      "backend_desc": "Node.js, Express, PostgreSQL",
+      "mobile_desc": "React Native, Flutter",
+      "tools_desc": "Git, Docker, Figma, AWS"
+    }
+  },
+  "stats": {
+    "projects": "Loyihalar",
+    "clients": "Mijozlar",
+    "experience": "Yillik tajriba",
+    "awards": "Mukofotlar"
+  },
+  "experience": {
+    "title": "Ish Tajribam"
+  },
+  "projects": {
+    "title": "Mening Loyihalarim",
+    "p1_title": "E-Commerce Platforma",
+    "p1_desc": "Zamonaviy onlayn do'kon. To'liq responsiv dizayn, savat tizimi va to'lov integratsiyasi bilan.",
+    "p2_title": "Moliya Boshqaruvi Ilovasi",
+    "p2_desc": "Shaxsiy xarajatlar va daromadlarni kuzatib boruvchi qulay web ilova. Grafiklar va hisobotlar mavjud.",
+    "p3_title": "Real-time Chat Ilovasi",
+    "p3_desc": "Foydalanuvchilar o'rtasida jonli muloqot qilish imkonini beruvchi platforma."
+  },
+  "contact": {
+    "title": "Bog'lanish",
+    "subtitle": "Men bilan bog'laning",
+    "desc": "Yangi loyihalar, savollar yoki hamkorlik takliflari bo'yicha menga yozishingiz mumkin. Siz bilan ishlashdan xursand bo'laman!",
+    "address_title": "Manzil",
+    "address_val": "Toshkent, O'zbekiston",
+    "form": {
+      "name": "Ismingiz",
+      "email": "Email manzilingiz",
+      "message": "Xabaringiz",
+      "submit": "Yuborish",
+      "placeholder_name": "John Doe",
+      "placeholder_email": "john@example.com",
+      "placeholder_message": "Salom, men siz bilan loyiha bo'yicha gaplashmoqchi edim...",
+      "success_alert": "Xabar yuborildi!"
+    }
+  },
+  "footer": {
+    "rights": "Barcha huquqlar himoyalangan."
+  }
+}
