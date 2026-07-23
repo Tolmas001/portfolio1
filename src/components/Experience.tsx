@@ -9,11 +9,11 @@ const Experience: React.FC = () => {
 
   const experiences = [
     {
-      title: 'Senior Frontend Developer',
+      title: 'Backend Developer',
       company: 'Tech Company',
       period: '2026 - Present',
       location: 'Tashkent',
-      description: 'Leading frontend development team, building scalable applications with React and TypeScript.'
+      description: 'Leading backend development team, building scalable applications with React and TypeScript.'
     },
     {
       title: 'Frontend Developer',
