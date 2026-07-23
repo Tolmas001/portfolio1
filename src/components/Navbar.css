@@ -130,7 +130,7 @@
 }
 
 .mobile-only {
-  display: flex;
+  display: none;
 }
 
 .mobile-nav {
@@ -174,11 +174,14 @@
   .mobile-controls {
     display: flex;
   }
-  
+  .mobile-only {
+    display: flex;
+  }
+
   .logo {
     font-size: 1.3rem;
   }
-  
+
   .mobile-toggle {
     padding: 0.5rem;
   }
