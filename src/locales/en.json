@@ -32,6 +32,9 @@
   "experience": {
     "title": "Work Experience"
   },
+  "services": {
+    "title": "Services"
+  },
   "projects": {
     "title": "My Projects",
     "p1_title": "E-Commerce Platform",
