@@ -128,6 +128,17 @@
   }
 }
 
+@media (max-width: 768px) {
+  .contact-info,
+  .contact-form {
+    padding: 2rem;
+  }
+  
+  .contact-info h3 {
+    font-size: 1.6rem;
+  }
+}
+
 @media (max-width: 576px) {
   .contact-info,
   .contact-form {

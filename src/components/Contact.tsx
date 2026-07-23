@@ -42,18 +42,18 @@ const Contact: React.FC = () => {
     hidden: { opacity: 0 },
     visible: { 
       opacity: 1,
-      transition: { staggerChildren: 0.2 }
+      transition: { staggerChildren: 0.15, delayChildren: 0.1 }
     }
   };
 
   const itemVariant: Variants = {
-    hidden: { opacity: 0, x: -30 },
-    visible: { opacity: 1, x: 0, transition: { duration: 0.5 } }
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: "easeOut" } }
   };
 
   const formVariant: Variants = {
-    hidden: { opacity: 0, x: 30 },
-    visible: { opacity: 1, x: 0, transition: { duration: 0.5 } }
+    hidden: { opacity: 0, y: 30 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } }
   };
 
   return (
@@ -69,7 +69,13 @@ const Contact: React.FC = () => {
           {t('contact.title')}
         </motion.h2>
         
-        <div className="contact-container glass">
+        <motion.div 
+          className="contact-container glass"
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.2 }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
+        >
           <motion.div 
             className="contact-info"
             variants={containerVariant}
@@ -84,9 +90,13 @@ const Contact: React.FC = () => {
             
             <div className="info-items">
               <motion.div className="info-item" variants={itemVariant}>
-                <div className="info-icon">
+                <motion.div 
+                  className="info-icon"
+                  whileHover={{ scale: 1.15, rotate: 5 }}
+                  transition={{ type: "spring", stiffness: 300 }}
+                >
                   <Mail size={20} />
-                </div>
+                </motion.div>
                 <div>
                   <h4>Email</h4>
                   <a href="mailto:urinovtolmas20@gmail.com" className="text-muted">urinovtolmas20@gmail.com</a>
@@ -94,9 +104,13 @@ const Contact: React.FC = () => {
               </motion.div>
               
               <motion.div className="info-item" variants={itemVariant}>
-                <div className="info-icon">
+                <motion.div 
+                  className="info-icon"
+                  whileHover={{ scale: 1.15, rotate: 5 }}
+                  transition={{ type: "spring", stiffness: 300 }}
+                >
                   <Phone size={20} />
-                </div>
+                </motion.div>
                 <div>
                   <h4>Telefon</h4>
                   <a href="tel:+998889377997" className="text-muted">+998 88 937 79 97</a>
@@ -104,9 +118,13 @@ const Contact: React.FC = () => {
               </motion.div>
               
               <motion.div className="info-item" variants={itemVariant}>
-                <div className="info-icon">
+                <motion.div 
+                  className="info-icon"
+                  whileHover={{ scale: 1.15, rotate: 5 }}
+                  transition={{ type: "spring", stiffness: 300 }}
+                >
                   <MapPin size={20} />
-                </div>
+                </motion.div>
                 <div>
                   <h4>{t('contact.address_title')}</h4>
                   <span className="text-muted">{t('contact.address_val')}</span>
@@ -123,7 +141,13 @@ const Contact: React.FC = () => {
             viewport={{ once: true, amount: 0.3 }}
             variants={formVariant}
           >
-            <div className="form-group">
+            <motion.div 
+              className="form-group"
+              initial={{ opacity: 0, y: 15 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.1, duration: 0.4 }}
+            >
               <label htmlFor="name">{t('contact.form.name')}</label>
               <input 
                 type="text" 
@@ -133,9 +157,15 @@ const Contact: React.FC = () => {
                 required 
                 placeholder={t('contact.form.placeholder_name')}
               />
-            </div>
+            </motion.div>
             
-            <div className="form-group">
+            <motion.div 
+              className="form-group"
+              initial={{ opacity: 0, y: 15 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.2, duration: 0.4 }}
+            >
               <label htmlFor="email">{t('contact.form.email')}</label>
               <input 
                 type="email" 
@@ -145,9 +175,15 @@ const Contact: React.FC = () => {
                 required 
                 placeholder={t('contact.form.placeholder_email')}
               />
-            </div>
+            </motion.div>
             
-            <div className="form-group">
+            <motion.div 
+              className="form-group"
+              initial={{ opacity: 0, y: 15 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.3, duration: 0.4 }}
+            >
               <label htmlFor="message">{t('contact.form.message')}</label>
               <textarea 
                 id="message" 
@@ -157,19 +193,19 @@ const Contact: React.FC = () => {
                 required 
                 placeholder={t('contact.form.placeholder_message')}
               ></textarea>
-            </div>
+            </motion.div>
             
             <motion.button 
               type="submit" 
               className="btn btn-primary submit-btn" 
               disabled={status === 'loading'}
-              whileHover={{ scale: 1.02 }}
+              whileHover={{ scale: 1.02, boxShadow: "0 8px 25px var(--accent-glow)" }}
               whileTap={{ scale: 0.98 }}
             >
               {t('contact.form.submit')} <Send size={18} />
             </motion.button>
           </motion.form>
-        </div>
+        </motion.div>
       </div>
     </section>
   );

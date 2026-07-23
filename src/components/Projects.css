@@ -4,6 +4,12 @@
   gap: 2rem;
 }
 
+.projects-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 2rem;
+}
+
 .project-card {
   border-radius: 20px;
   overflow: hidden;
@@ -207,10 +213,18 @@
   .projects-grid {
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   }
+
+  .projects-content {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  }
 }
 
 @media (max-width: 768px) {
   .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .projects-content {
     grid-template-columns: 1fr;
   }
 
