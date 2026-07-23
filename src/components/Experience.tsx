@@ -11,21 +11,21 @@ const Experience: React.FC = () => {
     {
       title: 'Senior Frontend Developer',
       company: 'Tech Company',
-      period: '2022 - Present',
+      period: '2026 - Present',
       location: 'Tashkent',
       description: 'Leading frontend development team, building scalable applications with React and TypeScript.'
     },
     {
       title: 'Frontend Developer',
       company: 'Digital Agency',
-      period: '2020 - 2022',
+      period: '2024 - 2025',
       location: 'Tashkent',
       description: 'Developed responsive web applications, collaborated with design team, implemented modern UI/UX.'
     },
     {
       title: 'Junior Developer',
       company: 'Startup Inc',
-      period: '2019 - 2020',
+      period: '2024 - 2025',
       location: 'Remote',
       description: 'Started career in web development, learned React, JavaScript, and modern development practices.'
     }

@@ -1,35 +1,53 @@
-import React from 'react';
-import { ExternalLink, Code } from 'lucide-react';
+import React, { useState, useEffect } from 'react';
+import { ExternalLink, Code, X } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { motion, type Variants } from 'framer-motion';
 import './Projects.css';
 
 const Projects: React.FC = () => {
   const { t } = useTranslation();
+  const [selectedProject, setSelectedProject] = useState<number | null>(null);
 
   const projects = [
     {
       title: t('projects.p1_title'),
       description: t('projects.p1_desc'),
       tech: ['React', 'TypeScript', 'Node.js', 'Stripe'],
-      github: '#',
-      live: '#'
+      github: 'https://github.com/Tolmas001/shop_frontend',
+      live: 'https://shop-frontend.vercel.app'
     },
     {
       title: t('projects.p2_title'),
       description: t('projects.p2_desc'),
       tech: ['Vue.js', 'Firebase', 'Chart.js'],
-      github: '#',
-      live: '#'
+      github: 'https://github.com/Tolmas001/msw-mocks',
+      live: 'https://msw-mocks-w8e9.vercel.app/'
     },
     {
       title: t('projects.p3_title'),
       description: t('projects.p3_desc'),
       tech: ['React', 'Socket.io', 'Express', 'MongoDB'],
-      github: '#',
-      live: '#'
+      github: 'https://github.com/Tolmas001/socket-io-chat',
+      live: 'https://frontend1-one-plum.vercel.app/'
     }
   ];
+
+  useEffect(() => {
+    const handleEsc = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') setSelectedProject(null);
+    };
+    if (selectedProject !== null) {
+      document.addEventListener('keydown', handleEsc);
+      document.body.style.overflow = 'hidden';
+    }
+    return () => {
+      document.removeEventListener('keydown', handleEsc);
+      document.body.style.overflow = 'unset';
+    };
+  }, [selectedProject]);
+
+  const openProject = (index: number) => setSelectedProject(index);
+  const closeProject = () => setSelectedProject(null);
 
   const containerVariant: Variants = {
     hidden: { opacity: 0 },
@@ -68,7 +86,7 @@ const Projects: React.FC = () => {
         </motion.h2>
         
         <motion.div 
-          className="projects-grid"
+          className={`projects-content ${selectedProject !== null ? 'blurred' : ''}`}
           variants={containerVariant}
           initial="hidden"
           whileInView="visible"
@@ -79,11 +97,10 @@ const Projects: React.FC = () => {
               key={index} 
               className="project-card glass"
               variants={cardVariant}
-              whileHover={{ 
-                y: -15, 
-                boxShadow: "0 20px 40px rgba(0, 0, 0, 0.4)",
-                borderColor: "rgba(255,255,255,0.2)"
-              }}
+              onClick={() => openProject(index)}
+              role="button"
+              tabIndex={0}
+              onKeyDown={(e) => { if (e.key === 'Enter') openProject(index); }}
             >
               <motion.div 
                 className="project-image-placeholder"
@@ -108,6 +125,7 @@ const Projects: React.FC = () => {
                     target="_blank" 
                     rel="noreferrer" 
                     aria-label="GitHub"
+                    onClick={(e) => e.stopPropagation()}
                     whileHover={{ scale: 1.1, backgroundColor: "var(--accent-primary)", color: "#fff" }}
                     whileTap={{ scale: 0.9 }}
                   >
@@ -119,6 +137,7 @@ const Projects: React.FC = () => {
                     target="_blank" 
                     rel="noreferrer" 
                     aria-label="Live Demo"
+                    onClick={(e) => e.stopPropagation()}
                     whileHover={{ scale: 1.1, backgroundColor: "var(--accent-primary)", color: "#fff" }}
                     whileTap={{ scale: 0.9 }}
                   >
@@ -129,6 +148,64 @@ const Projects: React.FC = () => {
             </motion.div>
           ))}
         </motion.div>
+
+        {selectedProject !== null && (
+          <motion.div 
+            className="modal-overlay"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            onClick={closeProject}
+          >
+            <motion.div 
+              className="modal-content glass"
+              initial={{ scale: 0.8, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              transition={{ type: "spring", stiffness: 200, damping: 20 }}
+              onClick={(e) => e.stopPropagation()}
+            >
+              <button className="modal-close" onClick={closeProject} aria-label="Close">
+                <X size={24} />
+              </button>
+              <div className="modal-header">
+                <h2>{projects[selectedProject].title}</h2>
+                <div className="project-tech">
+                  {projects[selectedProject].tech.map(tech => (
+                    <span key={tech} className="tech-tag">{tech}</span>
+                  ))}
+                </div>
+              </div>
+              <div className="modal-body">
+                <div className="project-image-placeholder modal-image">
+                  <span className="text-muted">Loyiha Rasmi</span>
+                </div>
+                <p className="modal-description">{projects[selectedProject].description}</p>
+              </div>
+              <div className="modal-footer">
+                <motion.a 
+                  href={projects[selectedProject].github} 
+                  className="btn btn-outline"
+                  target="_blank" 
+                  rel="noreferrer"
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                >
+                  <Code size={18} /> GitHub
+                </motion.a>
+                <motion.a 
+                  href={projects[selectedProject].live} 
+                  className="btn btn-primary"
+                  target="_blank" 
+                  rel="noreferrer"
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                >
+                  <ExternalLink size={18} /> Live Demo
+                </motion.a>
+              </div>
+            </motion.div>
+          </motion.div>
+        )}
       </div>
     </section>
   );

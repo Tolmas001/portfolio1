@@ -50,7 +50,7 @@ const Hero: React.FC = () => {
   const [loopNum, setLoopNum] = useState(0);
   const [typingSpeed, setTypingSpeed] = useState(100);
 
-  const roles = [t('hero.role'), 'React Developer', 'UI/UX Designer', 'Full Stack Developer'];
+  const roles = [t('hero.role'), 'React Developer', 'UI/UX Designer', 'Full Stack Developer','frontend Engineer', 'Software Engineer', 'Web Developer', 'JavaScript Enthusiast','backend Developer', 'Open Source Contributor', 'Tech Enthusiast', 'Problem Solver', 'Creative Thinker', 'Team Player', 'Continuous Learner','prompt Engineer', 'TypeScript Developer', 'Next.js Developer', 'Node.js Developer', 'GraphQL Developer', 'REST API Developer', 'Agile Practitioner', 'Scrum Master', 'Mentor', 'Community Builder', 'Tech Blogger', 'Conference Speaker', 'Workshop Facilitator'];
 
   useEffect(() => {
     const handleTyping = () => {

@@ -89,7 +89,7 @@ const Contact: React.FC = () => {
                 </div>
                 <div>
                   <h4>Email</h4>
-                  <a href="mailto:tolmas.urinov@gmail.com" className="text-muted">tolmas.urinov@gmail.com</a>
+                  <a href="mailto:tolmas.urinov@gmail.com" className="text-muted">urinovtolmas20@gmail.com</a>
                 </div>
               </motion.div>
               

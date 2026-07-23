@@ -6,13 +6,13 @@ import './Stats.css';
 
 const Stats: React.FC = () => {
   const { t } = useTranslation();
-  const [counts, setCounts] = useState({ projects: 0, clients: 0, experience: 0, awards: 0 });
+  const [counts, setCounts] = useState({ projects: 5, clients: 20, experience: 1, awards: 5 });
 
   const targetCounts = {
-    projects: 50,
-    clients: 30,
-    experience: 5,
-    awards: 15
+    projects: 5,
+    clients: 20,
+    experience: 1,
+    awards: 5
   };
 
   useEffect(() => {
