@@ -9,33 +9,15 @@ const Contact: React.FC = () => {
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
   const [status, setStatus] = useState<string | null>(null);
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     setStatus('loading');
-    
-    const formspreeEndpoint = "https://formspree.io/f/placeholder";
-    
-    try {
-      const response = await fetch(formspreeEndpoint, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(formData)
-      });
-      
-      if (response.ok) {
-        setStatus('success');
-        alert(t('contact.form.success_alert'));
-        setFormData({ name: '', email: '', message: '' });
-      } else {
-        setStatus('error');
-        alert("Xatolik yuz berdi. (Formspree manzilini to'g'rilang)");
-      }
-    } catch (error) {
-      setStatus('error');
-      alert("Xatolik yuz berdi.");
-    }
+
+    const subject = encodeURIComponent(`Portfolio Contact: ${formData.name || 'Visitor'}`);
+    const body = encodeURIComponent(`Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`);
+    window.location.href = `mailto:urinovtolmas20@gmail.com?subject=${subject}&body=${body}`;
+    setStatus('success');
+    setFormData({ name: '', email: '', message: '' });
   };
 
   const containerVariant: Variants = {
