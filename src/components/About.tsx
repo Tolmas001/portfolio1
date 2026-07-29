@@ -4,6 +4,8 @@ import { useTranslation } from 'react-i18next';
 import { motion, type Variants } from 'framer-motion';
 import './About.css';
 
+// Fullstack skills component
+
 const About: React.FC = () => {
   const { t } = useTranslation();
 
