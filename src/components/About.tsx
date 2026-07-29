@@ -1,5 +1,5 @@
 import React from 'react';
-import { Code, Database, Layout, Smartphone } from 'lucide-react';
+import { Code, Database, Layout } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { motion, type Variants } from 'framer-motion';
 import './About.css';
