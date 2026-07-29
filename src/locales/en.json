@@ -1,26 +1,30 @@
 {
   "navbar": {
     "about": "About",
+    "services": "Services",
+    "techstack": "Tech Stack",
     "projects": "Projects",
     "contact": "Contact"
   },
   "hero": {
     "greeting": "Hello, I am",
-    "role": "Frontend Developer",
-    "description": "I am passionate about creating fast, modern, and beautiful user interfaces. Solving problems in the React and TypeScript ecosystem brings me great joy.",
+    "role": "Junior Fullstack Developer",
+    "description": "I am passionate about creating fast, modern, and beautiful fullstack applications. I have knowledge in React.js, Next.js, Node.js, Express.js, PostgreSQL, MongoDB and other technologies, and I'm continuously learning.",
     "view_projects": "View Projects",
     "download_cv": "Download CV",
     "image_placeholder": "Image Placeholder"
   },
   "about": {
     "title": "About Me",
-    "p1": "Hello! I'm Tolmas. My interest in web technologies led me to the programming world. By constantly working on myself and learning new things, I aim to create user-friendly, fast, and beautiful web applications.",
-    "p2": "I love not only writing code but also working on every detail and bringing the quality of the product to the highest level. I would be glad to participate in your team or project.",
+    "p1": "Hello! I'm Tolmas. I aspire to become a Fullstack Developer. I have knowledge in React.js, Next.js, Node.js, Express.js, PostgreSQL, MongoDB and other modern technologies. By constantly learning and practicing, I aim to create user-friendly, fast, and beautiful fullstack applications.",
+    "p2": "I love not only writing code but also working on every detail and bringing the quality of the product to the highest level. I am learning REST API, GraphQL, Socket.io, JWT, OAuth 2.0, Docker and DevOps technologies. I would be glad to participate in your team or project.",
     "skills": {
-      "frontend_desc": "React, Vue, TypeScript, Tailwind",
-      "backend_desc": "Node.js, Express, PostgreSQL",
-      "mobile_desc": "React Native, Flutter",
-      "tools_desc": "Git, Docker, Figma, AWS"
+      "frontend_desc": "React.js, Next.js, TypeScript, Tailwind CSS",
+      "backend_desc": "Node.js, Express.js, NestJS, Fastify",
+      "database_desc": "PostgreSQL, MongoDB, Prisma ORM, Redis",
+      "api_desc": "REST API, GraphQL, Socket.io",
+      "devops_desc": "Docker, Nginx, PM2, Vercel, Render",
+      "ai_desc": "OpenAI API, Gemini API, Axios"
     }
   },
   "stats": {
@@ -34,6 +38,12 @@
   },
   "services": {
     "title": "Services"
+  },
+  "techstack": {
+    "title": "Tech Stack"
+  },
+  "testimonials": {
+    "title": "Testimonials"
   },
   "projects": {
     "title": "My Projects",

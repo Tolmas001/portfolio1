@@ -10,23 +10,23 @@ const Projects: React.FC = () => {
 
   const projects = [
     {
-      title: t('projects.p1_title'),
-      description: t('projects.p1_desc'),
-      tech: ['React', 'TypeScript', 'Node.js', 'Stripe'],
+      title: 'E-Commerce Fullstack Platform',
+      description: 'Complete e-commerce platform with React.js, Next.js frontend and Node.js, Express.js backend. Features include PostgreSQL database, Prisma ORM, JWT authentication, Stripe payment integration, and real-time order tracking with Socket.io.',
+      tech: ['React.js', 'Next.js', 'TypeScript', 'Node.js', 'Express.js', 'PostgreSQL', 'Prisma', 'Socket.io', 'JWT', 'Stripe'],
       github: 'https://github.com/Tolmas001/shop_frontend',
       live: 'https://shop-frontend.vercel.app'
     },
     {
-      title: t('projects.p2_title'),
-      description: t('projects.p2_desc'),
-      tech: ['Vue.js', 'Firebase', 'Chart.js'],
+      title: 'AI-Powered SaaS Application',
+      description: 'SaaS platform with OpenAI API integration for content generation. Built with Next.js, NestJS backend, MongoDB database, and Redis caching. Features include OAuth 2.0 authentication, real-time collaboration, and AI-powered features.',
+      tech: ['Next.js', 'NestJS', 'TypeScript', 'MongoDB', 'Redis', 'OpenAI API', 'OAuth 2.0', 'Socket.io', 'Docker'],
       github: 'https://github.com/Tolmas001/msw-mocks',
       live: 'https://msw-mocks-w8e9.vercel.app/'
     },
     {
-      title: t('projects.p3_title'),
-      description: t('projects.p3_desc'),
-      tech: ['React', 'Socket.io', 'Express', 'MongoDB'],
+      title: 'Real-time Chat Application',
+      description: 'Fullstack chat application with React frontend, Fastify backend, and MongoDB. Features include real-time messaging with Socket.io, GraphQL API, JWT authentication, file uploads, and responsive design with Tailwind CSS.',
+      tech: ['React', 'TypeScript', 'Fastify', 'GraphQL', 'MongoDB', 'Socket.io', 'JWT', 'Tailwind CSS', 'Docker'],
       github: 'https://github.com/Tolmas001/socket-io-chat',
       live: 'https://frontend1-one-plum.vercel.app/'
     }

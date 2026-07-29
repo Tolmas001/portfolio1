@@ -6,12 +6,12 @@ import './Stats.css';
 
 const Stats: React.FC = () => {
   const { t } = useTranslation();
-  const [counts, setCounts] = useState({ projects: 5, clients: 20, experience: 1, awards: 5 });
+  const [counts, setCounts] = useState({ projects: 5, clients: 20, experience: 0, awards: 5 });
 
   const targetCounts = {
     projects: 5,
     clients: 20,
-    experience: 1,
+    experience: 0,
     awards: 5
   };
 

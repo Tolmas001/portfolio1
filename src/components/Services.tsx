@@ -8,12 +8,12 @@ const Services: React.FC = () => {
   const { t } = useTranslation();
 
   const services = [
-    { icon: <Layout size={32} />, title: 'Web Development', desc: 'Modern, responsive web applications' },
-    { icon: <Smartphone size={32} />, title: 'Mobile Apps', desc: 'Cross-platform mobile applications' },
-    { icon: <Database size={32} />, title: 'Backend Development', desc: 'Scalable server-side solutions' },
-    { icon: <Palette size={32} />, title: 'UI/UX Design', desc: 'Beautiful and intuitive interfaces' },
-    { icon: <Code size={32} />, title: 'API Development', desc: 'RESTful and GraphQL APIs' },
-    { icon: <Zap size={32} />, title: 'Performance Optimization', desc: 'Fast and efficient applications' }
+    { icon: <Layout size={32} />, title: 'Fullstack Web Development', desc: 'React.js, Next.js, Node.js, Express.js' },
+    { icon: <Database size={32} />, title: 'Backend API Development', desc: 'REST API, GraphQL, NestJS, Fastify' },
+    { icon: <Code size={32} />, title: 'Database Design', desc: 'PostgreSQL, MongoDB, Prisma ORM, Redis' },
+    { icon: <Palette size={32} />, title: 'UI/UX Development', desc: 'Tailwind CSS, Bootstrap, Responsive Design' },
+    { icon: <Zap size={32} />, title: 'DevOps & Deployment', desc: 'Docker, Nginx, PM2, Vercel, Render' },
+    { icon: <Smartphone size={32} />, title: 'AI Integration', desc: 'OpenAI API, Gemini API, Socket.io' }
   ];
 
   return (

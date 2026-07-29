@@ -1,26 +1,30 @@
 {
   "navbar": {
     "about": "Men Haqimda",
+    "services": "Xizmatlar",
+    "techstack": "Texnologiyalar",
     "projects": "Loyihalar",
     "contact": "Bog'lanish"
   },
   "hero": {
     "greeting": "Assalomu alaykum, men",
-    "role": "Frontend Dasturchi",
-    "description": "Men zamonaviy, tez ishlashga qodir va chiroyli dizaynga ega interfeyslar yaratishga qiziqaman. React va TypeScript ekotizimida muammolarni hal qilish men uchun katta zavq bag'ishlaydi.",
+    "role": "Junior Fullstack Dasturchi",
+    "description": "Men zamonaviy, tez ishlashga qodir va chiroyli dizaynga ega fullstack ilovalar yaratishga qiziqaman. React.js, Next.js, Node.js, Express.js, PostgreSQL, MongoDB va boshqa texnologiyalarda bilimga egaman va o'rganishda davom etmoqdaman.",
     "view_projects": "Loyihalarni ko'rish",
     "download_cv": "Rezyumeni yuklab olish",
     "image_placeholder": "Rasm joyi"
   },
   "about": {
     "title": "Men Haqimda",
-    "p1": "Salom! Men Tolmas. Veb-texnologiyalarga bo'lgan qiziqishim meni dasturlash olamiga olib kirdi. O'z ustimda tinimsiz ishlash va yangi narsalarni o'rganish orqali foydalanuvchilarga qulay, tez ishlaydigan va chiroyli veb ilovalar yaratishni maqsad qilganman.",
-    "p2": "Men nafaqat kod yozishni, balki har bir detal ustida ishlashni va mahsulotning sifatini eng yuqori darajaga olib chiqishni yaxshi ko'raman. Sizning jamoangizda yoki loyihangizda ishtirok etishdan mamnun bo'laman.",
+    "p1": "Salom! Men Tolmas. Fullstack dasturchi bo'lishni maqsad qilganman. React.js, Next.js, Node.js, Express.js, PostgreSQL, MongoDB va boshqa zamonaviy texnologiyalarda bilimga egaman. O'z ustimda tinimsiz o'rganish va amaliyot qilish orqali foydalanuvchilarga qulay, tez ishlaydigan va chiroyli fullstack ilovalar yaratishni maqsad qilganman.",
+    "p2": "Men nafaqat kod yozishni, balki har bir detal ustida ishlashni va mahsulotning sifatini eng yuqori darajaga olib chiqishni yaxshi ko'raman. REST API, GraphQL, Socket.io, JWT, OAuth 2.0, Docker va DevOps texnologiyalarini o'rganmoqdaman. Sizning jamoangizda yoki loyihangizda ishtirok etishdan mamnun bo'laman.",
     "skills": {
-      "frontend_desc": "React, Vue, TypeScript, Tailwind",
-      "backend_desc": "Node.js, Express, PostgreSQL",
-      "mobile_desc": "React Native, Flutter",
-      "tools_desc": "Git, Docker, Figma, AWS"
+      "frontend_desc": "React.js, Next.js, TypeScript, Tailwind CSS",
+      "backend_desc": "Node.js, Express.js, NestJS, Fastify",
+      "database_desc": "PostgreSQL, MongoDB, Prisma ORM, Redis",
+      "api_desc": "REST API, GraphQL, Socket.io",
+      "devops_desc": "Docker, Nginx, PM2, Vercel, Render",
+      "ai_desc": "OpenAI API, Gemini API, Axios"
     }
   },
   "stats": {
@@ -34,6 +38,12 @@
   },
   "services": {
     "title": "Xizmatlar"
+  },
+  "techstack": {
+    "title": "Texnologiyalar"
+  },
+  "testimonials": {
+    "title": "Fikrlar"
   },
   "projects": {
     "title": "Mening Loyihalarim",

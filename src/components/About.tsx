@@ -8,10 +8,12 @@ const About: React.FC = () => {
   const { t } = useTranslation();
 
   const skills = [
-    { name: 'Frontend', icon: <Layout size={24} />, desc: t('about.skills.frontend_desc'), level: 95 },
-    { name: 'Backend', icon: <Database size={24} />, desc: t('about.skills.backend_desc'), level: 85 },
-    { name: 'Mobile', icon: <Smartphone size={24} />, desc: t('about.skills.mobile_desc'), level: 75 },
-    { name: 'Tools', icon: <Code size={24} />, desc: t('about.skills.tools_desc'), level: 90 }
+    { name: 'React & Next.js', icon: <Layout size={24} />, desc: 'React.js, Next.js, TypeScript, Tailwind CSS', level: 95 },
+    { name: 'Backend', icon: <Database size={24} />, desc: 'Node.js, Express.js, NestJS, Fastify', level: 90 },
+    { name: 'Databases', icon: <Database size={24} />, desc: 'PostgreSQL, MongoDB, Prisma ORM, Redis', level: 85 },
+    { name: 'API Development', icon: <Code size={24} />, desc: 'REST API, GraphQL, Socket.io', level: 92 },
+    { name: 'DevOps', icon: <Code size={24} />, desc: 'Docker, Nginx, PM2, Vercel, Render', level: 80 },
+    { name: 'AI Integration', icon: <Code size={24} />, desc: 'OpenAI API, Gemini API, Axios', level: 88 }
   ];
 
   const fadeUpVariant: Variants = {

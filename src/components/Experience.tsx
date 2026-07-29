@@ -9,25 +9,25 @@ const Experience: React.FC = () => {
 
   const experiences = [
     {
-      title: 'Backend Developer',
+      title: 'Junior Fullstack Developer',
       company: 'Tech Company',
-      period: '2026 - Present',
+      period: '0 - Present',
       location: 'Tashkent',
-      description: 'Leading backend development team, building scalable applications with React and TypeScript.'
-    },
-    {
-      title: 'Frontend Developer',
-      company: 'Digital Agency',
-      period: '2024 - 2025',
-      location: 'Tashkent',
-      description: 'Developed responsive web applications, collaborated with design team, implemented modern UI/UX.'
+      description: 'Learning fullstack development with React.js, Next.js, Node.js, Express.js, PostgreSQL. Studying REST APIs, GraphQL, and real-time features with Socket.io. Exploring Docker, Nginx, and PM2 for deployment.'
     },
     {
       title: 'Junior Developer',
+      company: 'Digital Agency',
+      period: '0 - 0',
+      location: 'Tashkent',
+      description: 'Developing fullstack web applications with React, TypeScript, Node.js, MongoDB. Learning RESTful APIs, OpenAI API integration, and database management with Prisma ORM.'
+    },
+    {
+      title: 'Backend Developer Trainee',
       company: 'Startup Inc',
-      period: '2024 - 2025',
+      period: '0 - 0',
       location: 'Remote',
-      description: 'Started career in web development, learned React, JavaScript, and modern development practices.'
+      description: 'Starting career in backend development with Node.js, Express.js, PostgreSQL. Learning JWT authentication, OAuth 2.0, and deployment to Vercel and Render.'
     }
   ];
 
