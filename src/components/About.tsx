@@ -15,7 +15,7 @@ const About: React.FC = () => {
     { name: 'Databases', icon: <Database size={24} />, desc: 'PostgreSQL, MongoDB, Prisma ORM, Redis', level: 85 },
     { name: 'API Development', icon: <Code size={24} />, desc: 'REST API, GraphQL, Socket.io', level: 92 },
     { name: 'DevOps', icon: <Code size={24} />, desc: 'Docker, Nginx, PM2, Vercel, Render', level: 80 },
-    { name: 'AI Integration', icon: <Code size={24} />, desc: 'OpenAI API, Gemini API, Axios', level: 88 }
+     { name: 'AI Integration', icon: <Code size={24} />, desc: 'OpenAI API, Gemini API, Axios', level: 88 }
   ];
 
   const fadeUpVariant: Variants = {

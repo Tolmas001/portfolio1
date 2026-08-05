@@ -14,7 +14,7 @@ const Projects: React.FC = () => {
       description: 'Complete e-commerce platform with React.js, Next.js frontend and Node.js, Express.js backend. Features include PostgreSQL database, Prisma ORM, JWT authentication, Stripe payment integration, and real-time order tracking with Socket.io.',
       tech: ['React.js', 'Next.js', 'TypeScript', 'Node.js', 'Express.js', 'PostgreSQL', 'Prisma', 'Socket.io', 'JWT', 'Stripe'],
       github: 'https://github.com/Tolmas001/shop_frontend',
-      live: 'https://shop-frontend.vercel.app'
+      live: 'https://shop-frontend-dun.vercel.app/'
     },
     {
       title: 'AI-Powered SaaS Application',
